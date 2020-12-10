@@ -41,6 +41,15 @@ padding-right:10px;
 color:white;
 font-weight:bold;
 }
+.undraw-publish{
+display:none;	
+}
+.navigation{
+display:none;
+}
+.arrow-left{
+display:none;
+}
 .topnavbar a img{
 height:20px;
 vertical-align:bottom;
@@ -235,6 +244,12 @@ font-weight:bold;
 font-family:roboto;
 text-align:center;
 }
+.more-vertical{
+display:none;
+}
+.menu{
+display:none;
+}
 
 @media only screen and (max-width: 600px) {
   .topnavbar {
@@ -243,6 +258,7 @@ text-align:center;
 	position: absolute;
     height: 100vh;
     z-index: 10;
+	background-color: white;
   }
   header{
    	text-align:center;
@@ -267,9 +283,15 @@ text-align:center;
   	width:100%;
   }
   .topnavbar a{
-  display:block;
+  	display:block;
+	padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #CCCCCC;
+    text-align: left;
+    padding-left: 30px;
+	color: black;
   }
- #square{
+  #square{
     position: relative;
     width: 40%;
     height: 16%;
@@ -287,13 +309,70 @@ text-align:center;
     font-weight: bold;
     font-size: 1.1em;
 	bottom:60px;
-}
- .test:after {
-  content: '\2807';
-  font-size: 40px;
-  color:#FFFFFF;
-  padding-left:325px;
-  }
-  
- 
+	}
+  .more-vertical{
+	display:block;
+	position:absolute;
+	top:10px;
+	right:5px;
+	}
+	
+  .menu{
+	 display: block;
+	 position: absolute;
+	 top: 10px;
+	 left: 10px;
+	}
+	.undraw-publish{
+	display:block;
+	margin-right: 80px;
+    margin-left: 30px;
+	}
+  .navigation{
+	display:block;
+	width:100%;
+	position:relative;
+	text-align:center;
+	background-color: 378FE7;
+    font-size: 20px;
+    padding: 10px;
+    margin-top: -10px;
+    color: white;
+	}
+	.arrow-left{
+	display:block;
+	position:absolute;
+	left:15px;
+	}
+	.social-media-icons{
+	display:block;
+	vertical-align:middle;
+	display:inline-block;
+	}
+	.github{
+	background-image:url(../images/github.svg);
+	border-radius:50%;
+	background-color:378FE7;
+	}
+	.linkedin{
+	background-image:url(../images/linkedin.svg);
+	border-radius:50%;
+	background-color:378FE7;
+	display:inline-block;
+	margin-left:259px;
+	}
+	.facebook{
+	background-image:url(../images/facebook.svg);
+	border-radius:50%;
+	background-color:378FE7;
+	margin-left:259px;
+	}
+	.youtube{
+	background-image:url(../images/youtube.svg);
+	border-radius:50%;
+	background-color:378FE7;
+	margin-left:259px;
+	}
+	}
+	}
 }

@@ -3,25 +3,65 @@
 <meta charset = "UTF-8">
 <meta name="viewport" content= width=device-width, initial-scale=1.0">
 <link href="css/myStyle.css" rel="stylesheet" type="text/css">
+ <style>
+            .card:hover::before{
+                content:"";
+                width: 200px;
+                height: 300px;
+                position: absolute;
+                transform: rotate(-10deg);
+                border-radius:5px;
+                background-color: white;
+                border: 1px solid #ccc;
+                z-index:-1;
+            }
+            .card:hover::after{
+                content:"";
+                width: 200px;
+                height: 300px;
+                position: absolute;
+                transform: rotate(10deg);
+                border-radius:5px;
+                background-color: white;
+                border: 1px solid #ccc;
+                z-index:-1;
+            }
+            .card{
+                width:200px;
+                height:300px;
+                border-radius:10px;
+                background-color: white;
+                border: 1px solid #ccc;
+                z-index:1;
+                cursor:pointer; 
+                margin: 20px;
+            }
+        </style>
 </head>
 <title>Untitled Document</title>
 <body>
   <header>
-    <div class="text" onclick="opendrawer()">PJ</div>
-    <div class="topnavbar" id="topnavbar"> 
+    <div class="text" >PJ</div>
+    <div class="topnavbar" id="topnavbar">
+		<!-- class navigation will contaion text menu and a back icon -->
+		<div class="navigation">
+			<img src="images/arrow-left.svg" class="arrow-left" onClick="closedrawer()"/>
+			Menu
+		</div>
+		 <img src="images/undraw_publish.svg" class="undraw-publish"/>
 		<a class="active" href="#home">Home</a> 
 		<a href="#about">About</a> 
 		<a href="#projects">Projects</a> 
 		<a href="#contact">Contact</a> 
+		<div class="social-media-icons">
 		<a href="#contact"  class="separator icons github">&nbsp;</a> 
 		<a href="#contact"  class="icons linkedin">&nbsp;</a> 
 		<a href="#contact"  class="icons facebook">&nbsp;</a> 
-		<a href="#contact"  class="icons youtube">&nbsp;</a> 
+		<a href="#contact"  class="icons youtube">&nbsp;</a>
+		</div>
 	</div>
-	<div class="test"></div>
-	  <div></div>
-      <div></div>
-      <div></div>
+	<img src="images/more-vertical.svg" class="more-vertical"/>
+	<img src="images/menu.svg" class="menu" onClick="opendrawer()" />
 	  </header>
   <section> 
   <img src="images/undraw_Short_bio_re_fmx0.svg" alt="hitech-girl" class="img" /> 
@@ -34,6 +74,9 @@
     <div id="square"></div>
     <div id="square"></div>
   </section>
+  <section>
+  <div class="card"> </div>
+  </section>
   <footer>
     All rights reserved, 2020
   </footer>
@@ -42,6 +85,12 @@
   	document.getElementById("topnavbar").style.left=0;
 	document.getElementById("topnavbar").style.display="initial";
   }
+  function closedrawer(){
+  document.getElementById("topnavbar").style.right=0;
+  document.getElementById("topnavbar").style.display="initial";
+ }
+  
   </script>
+  
 </body>
 </html>
