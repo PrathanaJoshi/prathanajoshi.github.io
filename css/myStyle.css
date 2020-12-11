@@ -274,10 +274,11 @@ display:none;
   }
   .text1{
   position: relative;
-    right: -20%;
-    bottom: 30%;
-    line-height: 1.5em;
-	padding-bottom: 40px
+  right: -20%;
+  bottom: 30%;
+  line-height: 1.5em;
+  padding-bottom: 40px;
+  padding-top: 22px;
   }
   .text{
   	width:100%;
@@ -338,6 +339,8 @@ display:none;
     padding: 10px;
     margin-top: -10px;
     color: white;
+	font-family:roboto;
+	font-weight:bold;
 	}
 	.arrow-left{
 	display:block;
@@ -353,26 +356,30 @@ display:none;
 	background-image:url(../images/github.svg);
 	border-radius:50%;
 	background-color:378FE7;
-	}
+	display: inline-block;
+    width:30%;
+}
+
 	.linkedin{
 	background-image:url(../images/linkedin.svg);
 	border-radius:50%;
 	background-color:378FE7;
 	display:inline-block;
-	margin-left:259px;
+    width:30%;
 	}
 	.facebook{
 	background-image:url(../images/facebook.svg);
 	border-radius:50%;
 	background-color:378FE7;
-	margin-left:259px;
+	display: inline-block;
+    width:30%;
 	}
 	.youtube{
 	background-image:url(../images/youtube.svg);
 	border-radius:50%;
 	background-color:378FE7;
-	margin-left:259px;
+	display: inline-block;
+    width:30%;
 	}
-	}
-	}
+	
 }
